@@ -1,0 +1,225 @@
+@media screen and (max-width:460px) {
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-size: cover;
+        background-position:  50% 20%;
+        background-repeat: no-repeat;
+        background-image: 
+        linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+        url('img/kedua-mempelai.jpg');
+        overflow-x: hidden;
+    }
+
+    .container{
+        color: white;
+
+    }
+
+    body::-webkit-scrollbar {
+        display: none; 
+    }
+    #opening{
+        background-image: url('img/kedua-mempelai.jpg');
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: 
+        linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+        url('img/kedua-mempelai.jpg');
+    }
+
+    .titles{
+        font-family: "Playwrite AU SA", cursive;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    .titlee{
+        margin-top: 3rem;
+        font-family: "Playwrite AU SA", cursive;
+        color: white;
+        font-size: 1rem;
+    }
+
+
+    .title{
+       margin-top: 3rem;
+        font-family: "Playwrite AU SA", cursive;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .invite-text{
+        margin-top: 0;
+        font-family:"Poppins", sans-serif ;
+        color: white;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .button-undangan{
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        border: 3px solid rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+
+    .button-undangan:hover{
+        color: yellow;
+        border: 3px solid yellow;
+        transition: .3s all ease-in-out;
+    }
+
+    .mempelai-section {
+        outline: 100px solid red;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+      }
+      
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+        z-index: 1;
+      }
+      
+      .mempelai-content {
+        position: relative;
+        z-index: 2;
+        max-width: 600px;
+        padding: 20px;
+      }
+      
+      .mempelai-content h2 {
+        margin: 10px 0;
+        font-size: 24px;
+      }
+      
+
+    .countdown-section {
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 1re;
+      }
+      
+      .countdown-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      
+      .countdown-box {
+        border-radius: 10px;
+        padding: 7px;
+        min-width: 50px;
+      }
+      
+      .countdown-box span {
+        font-size: 20px;
+        font-weight: 500;
+        display: block;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      .countdown-box small {
+        font-size: 10px;
+        color: #dbdbdb;
+        margin-top: 8px;
+        display: block;
+      }
+      
+      .calendar-button {
+        background-color: #b68c2e;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .calendar-button:hover {
+        background-color: #a47d25;
+      }
+
+      /* detail */
+      #detail-acara{
+        /* background-color: rgba(0, 0, 0, 0.548);
+        backdrop-filter: blur(2px); */
+        margin-top: 10rem;
+      }
+
+
+
+      /* bottom nav */
+      .bottom-nav {
+        width: 90%;
+        margin:  0 auto;
+        border-radius: 20px;
+        margin-bottom: .5rem;
+        position: fixed; /* Fixes the position */
+        bottom: 0; /* Aligns to the bottom of the viewport */
+        left: 0;
+        right: 0;
+        background: rgba(243, 243, 243, 0.712); /* Semi-transparent background */
+        display: flex;
+        justify-content: space-around; /* Space out the links evenly */
+        padding: 10px 10px;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        z-index: 1000; /* Ensures it stays above other content */
+        backdrop-filter: blur(1px);
+    }
+    
+    .bottom-nav a {
+        text-decoration: none; /* Removes underline from links */
+        color: #ffffff; /* Icon color */
+        font-size: 1rem; /* Adjust icon size */
+        text-align: center; /* Center the icons */
+        background-color: rgb(0, 0, 0);
+        padding: .5rem .7rem;
+        border-radius: 10px;
+    }
+
+    .bottom-nav a:hover{
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      transition: .3s all ease-in-out;
+    }
+    
+    .music-button {
+            background: none; /* No background */
+            border: none; /* No border */
+            cursor: pointer; /* Pointer cursor */
+            font-size: 1rem; /* Adjust icon size */
+            color: #ffffff; /* Icon color */
+            background-color: rgb(0, 0, 0);
+            padding: .5rem .7rem;
+            border-radius: 10px;
+    }
+
+    .music-button:hover{
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      transition: .3s all ease-in-out;
+    }
+}

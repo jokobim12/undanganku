@@ -1,0 +1,232 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Untuk Chrome, Safari, dan Opera */
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-family: "Sacramento", cursive;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    margin-top: 20rem;
+}
+
+
+/* halaman pembuka */
+#opening{
+    background-image: url('img/kedua-mempelai.jpg');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 19%;
+    background-repeat: no-repeat;
+    background-image: 
+    linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+    url('img/kedua-mempelai.jpg');
+}
+
+.titles{
+    font-family: "Sacramento", cursive;
+    /* font-style: italic; */
+    color: white;
+    font-size: 3rem;
+    /* text-decoration: underline;
+    text-underline-offset: 30px; */
+}
+
+/* .titlee{
+    font-family: "Sacramento", cursive;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0;
+    margin-bottom: .5rem;
+} */
+
+
+.title{
+    font-family: "Sacramento", cursive;
+    color: white;
+    font-size: 4rem;
+    margin: 0 0;
+}
+
+.invite-text{
+    margin-top: 0;
+    font-family:"Poppins", sans-serif ;
+    color: white;
+}
+
+.button-undangan{
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.button-undangan:hover{
+    color: yellow;
+    border: 3px solid yellow;
+    transition: .3s all ease-in-out;
+}
+
+
+.botton-bar{
+    position: sticky;
+    display: flex;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+/* mempelai */
+#mempelai {
+    background-image: url('img/kedua-mempelai.jpg');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position:  50% 20%;
+    background-repeat: no-repeat;
+    background-image: 
+    linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+    url('img/kedua-mempelai.jpg');
+  }
+
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('img/kedua-mempelai.jpg') center center / cover no-repeat;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    z-index: 1;
+  }
+  
+  .mempelai-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  
+  .mempelai-content h2 {
+    margin: 10px 0;
+    font-size: 40px;
+    color: white;
+  }
+  
+  .countdown-section {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1rem;
+  }
+  
+  .countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .countdown-box {
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 100px;
+    background: #ffffff49;
+    backdrop-filter: blur(5px);
+  }
+  
+  .countdown-box span {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    color: white;
+  }
+  
+  .countdown-box small {
+    font-size: 12px;
+    color: white;
+    margin-top: 8px;
+    display: block;
+  }
+  
+  .calendar-button {
+    background-color: #b68c2e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .calendar-button:hover {
+    background-color: #a47d25;
+  }
+
+
+  /* detail */
+  
+  
+
+.bottom-nav {
+    width: 50%;
+    margin:  0 auto;
+    border-radius: 50px;
+    margin-bottom: .5rem;
+    position: fixed; /* Fixes the position */
+    bottom: 0; /* Aligns to the bottom of the viewport */
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    display: flex;
+    justify-content: space-around; /* Space out the links evenly */
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.bottom-nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000000; /* Icon color */
+    font-size: 1.5em; /* Adjust icon size */
+    text-align: center; /* Center the icons */
+}
+
+.music-button {
+        background: none; /* No background */
+        border: none; /* No border */
+        cursor: pointer; /* Pointer cursor */
+        font-size: 1.5em; /* Adjust icon size */
+        color: #000000; /* Icon color */
+}
+

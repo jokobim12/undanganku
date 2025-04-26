@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="icon" href="img/kedua-mempelai.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsif.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+    rel="stylesheet">
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- icon awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Opening Page -->
+        <section id="opening" class="section">
+            <h1 class="titles"  data-aos="fade-up">Undangan Pernikahan</h1>
+            <!-- <p class="titlee"  data-aos="fade-up">The Wedding of</p> -->
+            <h1 class="title"  data-aos="fade-up">Joko & Wulan</h1>
+            <p class="invite-text"  data-aos="fade-up">Kepada Yth. Bapak/Ibu/Saudara/i:
+            <p style="color: white;" data-aos="fade-up"><span id="guest-name"  data-aos="fade-up"></span>
+            <span id="partner-name" data-aos="fade-up"></span></p>
+            <button id="open-invitation" class="button-undangan"  data-aos="fade-up">Buka Undangan</button>
+        </section>
+
+        <!-- Mempelai Page -->
+        <section id="mempelai" class="section hidden" data-aos="fade-up">
+            <div class="overlay"></div> <!-- untuk gradasi -->
+            <div class="mempelai-content" >
+              <h2 style="font-family: Sacramento, cursive;">Joko Bimantaro Amd.Kom</h2>
+              <p style="color: white;">Putra dari bapak fulan dan ibu wulan</p>
+
+              <h2 style="font-family:Sacramento, cursive;">&</h2>
+          
+              <h2 style="font-family:Sacramento, cursive;">Wulandari Amd.Kom</h2>
+              <p style="color: white;">Putri dari bapak fulan dan ibu wulan</p>
+      
+              <section class="countdown-section">
+                <div class="countdown-wrapper">
+                  <div class="countdown-box">
+                    <span id="days">0</span>
+                    <small>HARI</small>
+                  </div>
+                  <div class="countdown-box">
+                    <span id="hours">0</span>
+                    <small>JAM</small>
+                  </div>
+                  <div class="countdown-box">
+                    <span id="minutes">0</span>
+                    <small>MENIT</small>
+                  </div>
+                  <div class="countdown-box">
+                    <span id="seconds">0</span>
+                    <small>DETIK</small>
+                  </div>
+                </div>
+                <button id="saveBtn" class="button-undangan">Simpan Tanggalnya</button>
+              </section>
+          </section>
+
+        <!-- Detail Acara Section -->
+        <section id="detail-acara" class="section hidden">
+            <div class="container">
+                <div class="row justify-content-center mt-4">
+                  <div class="text-center">
+                    <h2>- Save the Date -</h2>
+                    <p>InsyaAllah rangkaian acara akan diselenggarakan pada:</p>
+                  </div>
+                  <div class="col-md-5 col-10">
+                    <div class="card text-center text-bg-light mb-5">
+                      <div class="card-header">Akad Nikah</div>
+                      <div class="card-body">
+                        <div class="row justify-content-center">
+                          <div class="col-md-6">
+                            <i class="bi bi-clock d-block"></i>
+                            <span>08.00 - selesai</span>
+                          </div>
+                          <div class="col-md-6">
+                            <i class="bi bi-calendar3 d-block"></i>
+                            <span>30 Mei 2024</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 col-10">
+                    <div class="card text-center text-bg-light">
+                      <div class="card-header">Resepsi</div>
+                      <div class="card-body">
+                        <div class="row justify-content-center">
+                          <div class="col-md-6">
+                            <i class="bi bi-clock d-block"></i>
+                            <span>11.00 - selesai</span>
+                          </div>
+                          <div class="col-md-6">
+                            <i class="bi bi-calendar3 d-block"></i>
+                            <span>30 Mei 2024</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="row justify-content-center">
+                  <div class="col-md-8 col-10 text-center">
+                    <h2>Lokasi Acara</h2>
+                    <p class="alamat">Alamat: Gedung Serbaguna Al Rahman. Masjid Jami' Baiturrahman <br> Jl. lingkar PTB, RT.1/RW.12, Duren Sawit, Kec. Duren Sawit, Kota Jakarta Timur, 
+                      Daerah Khusus Ibukota Jakarta</p>
+                        <div class="map">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2836846699743!2d106.91277077499042!3d-6.226278193761811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698de796863e2b%3A0xf8a57b4af5163286!2sGedung%20Serbaguna%20Al%20Rahman.%20Masjid%20Jami&#39;%20Baiturrahman%20Duren%20Sawit%20Jakarta%20Timur!5e0!3m2!1sid!2sid!4v1716084174191!5m2!1sid!2sid" 
+                      width="100%" height="250" style="border-radius: 10px;" allowfullscreen="" loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/z2QPhajTqtySWrek9" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk
+                      membuka peta</a>
+                    <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak
+                      ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Love Story Section -->
+        <section id="love-story" class="section hidden">
+            <div class="container">
+            <h2>Love Story</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">2018: Met for the first time.</div>
+                <div class="timeline-item" data-aos="fade-up">2019: First date.</div>
+                <div class="timeline-item" data-aos="fade-up">2020: Got engaged.</div>
+            </div>
+        </section>
+
+        <!-- Galeri Section -->
+        <section id="galeri" class="section hidden">
+            <h2>Galeri</h2>
+            <div class="gallery">
+                <img src="images/photo1.jpg" alt="Gallery Image 1" onclick="openLightbox(this.src)">
+                <img src="images/photo2.jpg" alt="Gallery Image 2" onclick="openLightbox(this.src)">
+                <!-- Add more images -->
+            </div>
+            </div>
+        </section>
+
+        <!-- Doa Section -->
+        <section id="doa" class="section hidden">
+            <h2>Doa</h2>
+            <p>Surah Ar-Rum ayat 21</p>
+            <p>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا</p>
+            <p>Translation: "And among His signs is that He created for you from yourselves mates that you may find tranquility in them."</p
+
+            </section>
+
+            <!-- Komentar Section -->
+            <section id="komentar" class="section hidden">
+                <h2>Komentar</h2>
+                <form id="comment-form">
+                    <input type="text" id="name" placeholder="Nama" required>
+                    <textarea id="message" placeholder="Pesan Anda" required></textarea>
+                    <button type="submit">Kirim</button>
+                </form>
+                <div id="comments"></div>
+            </section>
+    
+            <!-- RSVP Section -->
+            <section id="rsvp" class="section hidden">
+                <!-- <h2>RSVP</h2> -->
+                <form id="rsvp-form">
+                    <input type="text" id="rsvp-name" placeholder="Nama" required>
+                    <input type="number" id="guest-count" placeholder="Berapa Orang" required>
+                    <select id="attendance-status" required>
+                        <option value="">Hadir</option>
+                        <option value="yes">Tidak</option>
+                    </select>
+                    <button type="submit">Kirim</button>
+                </form>
+            </section>
+    
+            <!-- Amplop Digital Section -->
+            <section id="amplop" class="section hidden">
+                <h2>Amplop Digital</h2>
+                <p>Scan QR Code for DANA:</p>
+                <img src="images/qris.png" alt="QRIS" style="width: 200px;">
+                <p>Tanpa mengurangi rasa hormat...</p>
+            </section>
+    
+            <!-- Penutup Section -->
+            <section id="penutup" class="section hidden">
+                <h2>Terima Kasih</h2>
+                <p>Ucapan terima kasih kepada para tamu.</p>
+                <blockquote>"Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day."</blockquote>
+            </section>
+
+            <!-- footer -->
+             <footer>
+                <p>© 2025 tailwind_id. All rights reserved.</p>
+                <p>develoved by tailwind_id.</p>
+                <p style="margin-bottom: 5rem;">Build With HTML, CSS and JS</p>
+             </footer>
+    
+            <!-- Bottom Navigation Bar -->
+        <nav class="bottom-nav">
+            <a href="#mempelai" title="Mempelai"><i class="fas fa-user-friends"></i></a>
+            <a href="#detail-acara" title="Detail Acara"><i class="fas fa-calendar-alt"></i></a>
+            <a href="#love-story" title="Love Story"><i class="fas fa-heart"></i></a>
+
+            <div id="audio-control">
+                <audio id="backsound" loop autoplay muted>
+                  <source src="music/backsound.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+                <button id="music-toggle" class="music-button" title="Ply Music">
+                    <i class="fas fa-play" id="play-icon"></i>
+                    <i class="fas fa-pause" id="pause-icon" style="display: none;"></i>
+                </button>
+              </div>
+
+            <!-- <button id="music-toggle" class="music-button" title="Play Music">
+                <i class="fas fa-play" id="play-icon"></i>
+                <i class="fas fa-pause" id="pause-icon" style="display: none;"></i>
+            </button> -->
+            <a href="#galeri" title="Galeri"><i class="fas fa-images"></i></a>
+            <a href="#komentar" title="Komentar"><i class="fas fa-comments"></i></a>
+            <a href="#amplop" title="Amplop"><i class="fas fa-gift"></i></a>
+        </nav>
+        </div>
+    
+        <!-- <audio id="background-music" src="music/Wahyu F Giri - LESTARI  (Official Music Video)      Rasa Tresna Kang Sejati Manggiha Lestari.mp3" preload="auto"></audio> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+        <script src="script.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+    </html>
