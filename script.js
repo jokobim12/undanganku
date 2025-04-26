@@ -133,70 +133,6 @@ function openLightbox(src) {
     document.body.appendChild(lightbox);
 }
 
-// Falling hearts animation
-const fallingHearts = document.querySelector('.falling-hearts');
-setInterval(() => {
-    const heart = document.createElement('div');
-    heart.className = 'heart';
-    heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.animationDuration = Math.random() * 3 + 2 + 's';
-    fallingHearts.appendChild(heart);
-    setTimeout(() => {
-        heart.remove();
-    }, 5000);
-}, 500);
-
-// CSS for falling hearts
-const style = document.createElement('style');
-style.innerHTML = `
-    .heart {
-        position: absolute;
-        top: -50px;
-        width: 20px;
-        height: 20px;
-        background-image: url('images/heart.png'); /* Replace with your heart image */
-        background-size: cover;
-        opacity: 0.8;
-        animation: fall linear forwards;
-    }
-
-    @keyframes fall {
-        0% {
-            transform: translateY(0);
-        }
-        100% {
-            transform: translateY(100vh);
-        }
-    }
-
-    .lightbox {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-    }
-
-    .lightbox img {
-        max-width: 90%;
-        max-height: 90%;
-    }
-
-    .lightbox .close {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        color: white;
-        font-size: 2em;
-        cursor: pointer;
-    }
-`;
-document.head.appendChild(style);
 
 // nama undangan
 // Fungsi untuk mendapatkan parameter URL
@@ -266,24 +202,5 @@ toggleBtn.addEventListener("click", () => {
   isPlaying = !isPlaying;
 });
 
-
-// heart
-const heartContainer = document.getElementById('heart-container');
-
-function createHeart() {
-    const heart = document.createElement('div');
-    heart.className = 'heart';
-    heart.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
-    heart.style.animationDuration = Math.random() * 2 + 3 + 's'; // Random fall duration
-    heartContainer.appendChild(heart);
-
-    // Remove heart after animation ends
-    heart.addEventListener('animationend', () => {
-        heart.remove();
-    });
-}
-
-// Generate hearts at intervals
-setInterval(createHeart, 500); // Adjust the interval as needed
 
 

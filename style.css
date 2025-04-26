@@ -105,6 +105,10 @@ p{
     display: none;
 }
 
+.title-section{
+  font-weight: 600;
+}
+
 /* mempelai */
 #mempelai {
     background-image: url('img/kedua-mempelai.jpg');
@@ -195,7 +199,13 @@ p{
 
 
   /* detail */
+  #detail-acara{
+    margin-top: 6rem;
+  }
   
+  .map{
+    border-radius: 10px;
+  }
   
 
 .bottom-nav {
