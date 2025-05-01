@@ -26,7 +26,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
         <!-- Opening Page -->
         <section id="opening" class="section">
             <h1 class="titles"  data-aos="fade-up">Undangan Pernikahan</h1>
@@ -75,7 +74,7 @@
 
         <!-- Detail Acara Section -->
         <section id="detail-acara" class="section hidden">
-            <div class="container">
+            <div class="main-container">
                 <div class="row justify-content-center mt-4">
                   <div class="text-center">
                     <h2 class="title-section">- Save the Date -</h2>
@@ -141,37 +140,62 @@
 
         <!-- Love Story Section -->
         <section id="love-story" class="section hidden">
-            <div class="container">
+            <div class="main-container">
             <h2>Love Story</h2>
             <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">2018: Met for the first time.</div>
-                <div class="timeline-item" data-aos="fade-up">2019: First date.</div>
-                <div class="timeline-item" data-aos="fade-up">2020: Got engaged.</div>
+                <div class="timeline-item" data-aos="fade-up">
+                  2018: Lorem ipsum dolor sit amet, consectetur 
+                  adipisicing elit. Quis quae nemo enim voluptates
+                   odit fugiat natus, beatae ratione ab voluptas 
+                   soluta culpa repudiandae ullam, modi blanditiis
+                    sequi debitis inventore eos.
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                  2019: Lorem ipsum dolor sit amet, consectetur 
+                  adipisicing elit. Quis quae nemo enim voluptates
+                   odit fugiat natus, beatae ratione ab voluptas 
+                   soluta culpa repudiandae ullam, modi blanditiis
+                    sequi debitis inventore eos.
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                  2020: Lorem ipsum dolor sit amet, consectetur 
+                  adipisicing elit. Quis quae nemo enim voluptates
+                   odit fugiat natus, beatae ratione ab voluptas 
+                   soluta culpa repudiandae ullam, modi blanditiis
+                    sequi debitis inventore eos.
+                </div>
             </div>
         </section>
 
         <!-- Galeri Section -->
         <section id="galeri" class="section hidden">
+          <div class="main-container">
             <h2>Galeri</h2>
             <div class="gallery">
-                <img src="images/photo1.jpg" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-                <img src="images/photo2.jpg" alt="Gallery Image 2" onclick="openLightbox(this.src)">
+                <img src="img/kedua-mempelai.jpg" alt="Gallery Image 1" onclick="openLightbox(this.src)">
+                <img src="img/kedua-mempelai.jpg" alt="Gallery Image 1" onclick="openLightbox(this.src)">
+                <img src="img/kedua-mempelai.jpg" alt="Gallery Image 1" onclick="openLightbox(this.src)">
+                <img src="img/kedua-mempelai.jpg" alt="Gallery Image 1" onclick="openLightbox(this.src)">
+                <img src="img/kedua-mempelai.jpg" alt="Gallery Image 1" onclick="openLightbox(this.src)">
+                <img src="img/kedua-mempelai.jpg" alt="Gallery Image 1" onclick="openLightbox(this.src)">
                 <!-- Add more images -->
             </div>
             </div>
+          </div>
         </section>
 
         <!-- Doa Section -->
         <section id="doa" class="section hidden">
+          <div class="main-container">
             <h2>Doa</h2>
             <p>Surah Ar-Rum ayat 21</p>
             <p>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا</p>
             <p>Translation: "And among His signs is that He created for you from yourselves mates that you may find tranquility in them."</p
-
             </section>
 
             <!-- Komentar Section -->
             <section id="komentar" class="section hidden">
+              <div class="main-container">
                 <h2>Komentar</h2>
                 <form id="comment-form">
                     <input type="text" id="name" placeholder="Nama" required>
@@ -179,10 +203,12 @@
                     <button type="submit">Kirim</button>
                 </form>
                 <div id="comments"></div>
+              </div>
             </section>
     
             <!-- RSVP Section -->
             <section id="rsvp" class="section hidden">
+              <div class="main-container">
                 <!-- <h2>RSVP</h2> -->
                 <form id="rsvp-form">
                     <input type="text" id="rsvp-name" placeholder="Nama" required>
@@ -193,14 +219,17 @@
                     </select>
                     <button type="submit">Kirim</button>
                 </form>
+              </div>
             </section>
     
             <!-- Amplop Digital Section -->
             <section id="amplop" class="section hidden">
+              <div class="main-container">
                 <h2>Amplop Digital</h2>
                 <p>Scan QR Code for DANA:</p>
                 <img src="images/qris.png" alt="QRIS" style="width: 200px;">
                 <p>Tanpa mengurangi rasa hormat...</p>
+                </div>
             </section>
     
             <!-- Penutup Section -->
@@ -214,7 +243,7 @@
              <footer>
                 <p>© 2025 tailwind_id. All rights reserved.</p>
                 <p>develoved by tailwind_id.</p>
-                <p style="margin-bottom: 5rem;">Build With HTML, CSS and JS</p>
+                <p>Build With HTML, CSS and JS</p>
              </footer>
     
             <!-- Bottom Navigation Bar -->
